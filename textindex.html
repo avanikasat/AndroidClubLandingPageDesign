@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./textstyle.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.mySlides {display:none;}
+h2{
+text-align:center;
+font-size:23px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 200px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Android Club</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Event1</a></li>
+                <li><a href="#">Event2</a></li>
+                <li><a href="#">Event3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Our Goals</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+        
+      
+    <div>
+        <h3 style="text-align: center;text-decoration: underline;">Welcome to ANDROID CLUB<br>VIT , CHENNAI</h3>
+        <img src="./Untitled-1.png" class="center">
+    </div>
+    
+</nav>
+  
+
+<div class="row">
+  <div class="column" style="background-color:#EE4A70;">
+    <h2 style="font-family:fantasy;">#UPCOMING~EVENTS</h2>
+    <ol>
+      <li style="font-family: copperplate;font-size: 25px;font-weight: bold;color:white;">App Development workshop<br><button style="font-size:15px;color: black;">view details</button></li>
+      <li style="font-family: copperplate;font-size: 25px;font-weight: bold;color:white;">"code what u know" competetion<br><button style="font-size:15px;color: black;">view details</button></li>
+      <li style="font-family: copperplate;font-size: 25px;font-weight: bold;color:white;">AI & ML Development workshop<br><button style="font-size:15px;color: black;">view details</button></li>
+    </ol>
+  </div>
+  <div class="column" style="background-color:#4AEEB1;">
+    <h2>Coming together is a <i>beginning</i></strong><br><br>staying together is a <i>progress</i><br><br>and working together is a<i> success</i></h2>
+    <hr>
+    <h4 style="text-align: center;font-family:fantasy;">"Know the team of ANDROID CLUB"</h4><hr> 
+    <h2><button style="font-family: cursive;color:pink;background-color: black;">view members</button></h2>
+  </div>
+  <div class="column" style="background-color:#EE4A70;">
+    <h2 style="font-family:fantasy;">#ALL~EVENTS~TILL~DATE</h2>
+    <ol>
+      <li style="font-family: copperplate;font-size: 25px;font-weight: bold;color:white;">web Development workshop<br><button style="font-size:15px;color: black;">view details</button></li>
+      <li style="font-family: copperplate;font-size: 25px;font-weight: bold;color:white;">Coding Challenge<br><button style="font-size:15px;color: black;">view details</button></li>
+      <li style="font-family: copperplate;font-size: 25px;font-weight: bold;color:white;">video editing workshop<br><button style="font-size:15px;color: black;">view details</button></li>
+    </ol>
+  </div>
+</div>
+<h2 class="w3-center">EVENTS & Workshops</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="./img2.png" style="width:100%">
+  <img class="mySlides" src="./img3.png" style="width:100%">
+  <img class="mySlides" src="./img2.png" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<hr>
+<div style="background-color: gray;color: hotpink;">
+<h3 style="text-align:center;">Register Soon!!<br>Time Left..</h3>
+<p id="demo"></p>
+<h3 style="text-align:center;">"The Coding Challenge"</h3>
+<h2><button>Apply Here</button></h2>
+</div>
+<hr>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+    
+<footer>
+    <h2>Join the Community</h4>
+    <div class="container" style="text-align: center;">
+            <ul class="social-network social-circle">
+              
+              <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>
+</html>
